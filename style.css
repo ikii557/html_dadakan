@@ -1,0 +1,160 @@
+body {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-image: url('kitaberdua.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px;
+    color: #cce0ff; /* biru keunguan */
+    backdrop-filter: blur(6px); /* efek blur lembut */
+  }
+  
+  input, button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #ff69b4;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff1493;
+  }
+  
+  /* Animasi gambar hati */
+  .heart {
+    width: 100px;
+    height: 100px;
+    background-image: url('heart.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: pulse 2s ease-in-out infinite;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  /* Efek hujan love */
+  .love-rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 10;
+  }
+  
+  .love-drop {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('love.png'); /* love.png harus transparan (PNG) */
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fall 6s linear infinite;
+    opacity: 0.7;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateX(0vw) translateY(-100px) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(20vw) translateY(110vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  .puisi {
+    color: #cce6ff;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.4); /* Blur gelap lembut */
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    backdrop-filter: blur(5px); /* Tambahkan efek blur */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    line-height: 1.8;
+  }
+  .syelly {
+    width: 100px;
+    height: 100px;
+    background-image: url('syelly.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: pulse 2s ease-in-out infinite;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  .kitaberdua {
+    width: 100px;
+    height: 100px;
+    background-image: url('kitaberdua.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: pulse 2s ease-in-out infinite;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  @media (max-width: 600px) {
+    body {
+      padding: 20px;
+      font-size: 16px;
+    }
+  
+    .heart {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .love-drop {
+      width: 20px;
+      height: 20px;
+    }
+  
+    h1 {
+      font-size: 22px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  
+    input, button {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+  

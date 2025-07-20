@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Selamat Datang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kitaberdua"></div>
+    <div class="love-rain" id="loveRain"></div>
+
+
+  <h1>Hay Syelly </h1>
+  <h4>pencet we mun sakirana hayang lanjut </h4>
+  <button onclick="window.location.href='kalkulator.html'">Lanjut</button>
+  <div class="love-rain" id="loveRain"></div>
+
+  <script>
+    const rainContainer = document.getElementById('loveRain');
+  
+    function createDrop() {
+      const drop = document.createElement('div');
+      drop.className = 'love-drop';
+      drop.style.left = Math.random() * 100 + 'vw';
+      drop.style.animationDuration = (Math.random() * 3 + 4) + 's'; // 4-7 detik
+      rainContainer.appendChild(drop);
+  
+      setTimeout(() => {
+        drop.remove();
+      }, 7000);
+    }
+  
+    setInterval(createDrop, 300); // semakin kecil angkanya, semakin sering turun
+  </script>
+  
+
+</body>
+</html>

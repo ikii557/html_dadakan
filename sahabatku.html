@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Untuk Sahabat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="syelly"></div>
+  <div class="love-rain" id="loveRain"></div>
+  <audio autoplay loop>
+    <source src="musik.mp3" type="audio/mpeg">
+    Browsermu tidak mendukung audio.
+  </audio>
+
+  <div class="bubble"></div>
+
+  <h1>Terima kasih udah masuk </h1>
+  <h1>Untuk Sahabatku Tersayang</h1>
+  <p class="puisi">
+    Jarak boleh jauh, tapi hati tetap dekat,<br>
+    Sekolahmu memang jauh tapi itu bukan halangan,<br>
+    Tapi kenangan baru yang akan tersusun kembali.<br><br>
+  
+    kamu sahabat yang selalu tertawa bersamaku,<br>
+    Di setiap lelah, kau penyemangatku,<br>
+    Kini jalanmu berbeda, tapi ingatlah...<br><br>
+  
+    Jika suatu hari kamu merasa lelah,<br>
+    Dunia seolah menekan langkahmu,<br>
+    Aku ada di sini, menunggumu pulang,<br>
+    Siap menjadi telinga dan pelukan.<br><br>
+  
+    Jangan lupa senyummu yang menguatkan,<br>
+    Jangan lupakan aku yang selalu mendoakan.<br>
+    Sahabat itu tak harus selalu dekat,<br>
+    Tapi akan selalu ada, meski tak terlihat.
+  </p>
+  
+  <script>
+    const rainContainer = document.getElementById('loveRain');
+  
+    function createDrop() {
+      const drop = document.createElement('div');
+      drop.className = 'love-drop';
+      drop.style.left = Math.random() * 100 + 'vw';
+      drop.style.animationDuration = (Math.random() * 3 + 4) + 's'; // 4-7 detik
+      rainContainer.appendChild(drop);
+  
+      setTimeout(() => {
+        drop.remove();
+      }, 7000);
+    }
+  
+    setInterval(createDrop, 300); // semakin kecil angkanya, semakin sering turun
+  </script>
+</body>
+</html>
